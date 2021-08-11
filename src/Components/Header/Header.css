@@ -1,4 +1,9 @@
-* {
+@font-face {
+    font-family: "orangeJuice";
+    src: url("orange-juice-2.0-webfont.woff")
+ }
+
+.navigationMenu {
   font-family: orangeJuice;
 }
 
@@ -16,7 +21,7 @@ ul {
   
   li {
     float: left;
-    margin: left 40px;
+    
   }
   
   li a {
@@ -27,35 +32,23 @@ ul {
     text-decoration: none;
     font-size:xx-large;
   }
-  
-  li a:hover:not(.active) {
-    background-color: rgb(194, 194, 194);
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
 
-  @font-face {
-    font-family: "orangeJuice";
-    src: url("orange-juice-2.0-webfont.woff")
-  }
 
   /*=====================*/
-  .button {
+  .navigationButton {
     position: relative;
     display: inline-block;
     cursor: pointer;
   }
   
-  .button button {
+  .navigationButton navigationButton {
     padding: 8px 16px;
     border: none;
     background: none;
     outline: none;
   }
   
-  .button svg {
+  .navigationButton svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,13 +57,13 @@ ul {
     pointer-events: none;
   }
   
-  .button path {
+  .navigationButton path {
     stroke: #db3157;
     stroke-width: 8px;
     stroke-dasharray: 0 1500;
   }
   
-  .button:hover path {
+  .navigationButton:hover path {
     animation: draw 1s forwards;
   }
   
