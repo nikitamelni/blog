@@ -1,3 +1,29 @@
-.mainContent {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+.centerColumnContent{
+  font-family: Inconsolata;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.centerColumnContent::before{
+  box-shadow: -15px 0 15px -15px inset;
+  left: -15px;
+}
+
+.centerColumnContent::after{
+  box-shadow: 15px 0 15px -15px inset;
+  right: -15px;
+}
+
+body{
+  background-image: url("Components/iss062e081621.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

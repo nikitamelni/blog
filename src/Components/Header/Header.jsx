@@ -28,7 +28,6 @@ function Header() {
                         </svg></li>
                 </ul>
             </nav>
-            <hr />
         </>
     );
 }

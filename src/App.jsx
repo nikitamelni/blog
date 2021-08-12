@@ -11,14 +11,14 @@ import Contacts from './Components/Contacts'
 import Posts from './Components/Posts'
 
 function App() {
-  console.log("App is loaded");
-
   return (
-    <Switch>
-      <Route exact path="/contacts" component={Contacts} />
-      <Route exact path="/posts" component={Posts} />
-      <Route exact path="/" component={Home} />
-    </Switch>
+    <div className="centerColumnContent">
+      <Switch>
+        <Route exact path="/contacts" component={Contacts} />
+        <Route exact path="/posts" component={Posts} />
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </div>
   );
 }
 
