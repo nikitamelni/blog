@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Link,
-    withRouter
-} from "react-router-dom";
-import './Header.css';
+import { Link, withRouter } from "react-router-dom";
+import '../Resources/Styles/Header.css';
 
 function Header() {
     return (

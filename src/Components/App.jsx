@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  withRouter
-} from "react-router-dom";
-import Home from './Components/Home'
-import Contacts from './Components/Contacts'
-import Posts from './Components/Posts'
+import React from 'react';
+import '../Resources/Styles/App.css';
+import { Switch, Route, withRouter} from "react-router-dom";
+import Home from './Home'
+import Contacts from './Contacts'
+import Posts from './Posts'
 
 function App() {
   return (
